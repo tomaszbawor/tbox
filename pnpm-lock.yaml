@@ -39,8 +39,8 @@ importers:
         specifier: ^0.8.8
         version: 0.8.8
       '@effect/eslint-plugin':
-        specifier: ^0.2.0
-        version: 0.2.0
+        specifier: ^0.3.2
+        version: 0.3.2
       '@effect/language-service':
         specifier: latest
         version: 0.27.0
@@ -216,8 +216,8 @@ packages:
       '@effect/workflow': ^0.5.1
       effect: ^3.16.14
 
-  '@effect/eslint-plugin@0.2.0':
-    resolution: {integrity: sha512-PC/hEDGctYGYIjZyhM6kbD4FyHxLgoYNoQNjGkCXcFEzi71vQc3PJKe2JnCgzcUDvr/Nc2qgTVU4ONYwjHzQGA==}
+  '@effect/eslint-plugin@0.3.2':
+    resolution: {integrity: sha512-c4Vs9t3r54A4Zpl+wo8+PGzZz3JWYsip41H+UrebRLjQ2Hk/ap63IeCgN/HWcYtxtyhRopjp7gW9nOQ2Snbl+g==}
 
   '@effect/experimental@0.52.2':
     resolution: {integrity: sha512-CotYjNLYvSAsYYwTE1/NUr/XkiupoYi941lq3NWGrJrYWov3T6v3Gg2om/n29/WqoMYpnFn0ka2AixTWhcq9dg==}
@@ -2925,7 +2925,7 @@ snapshots:
       '@effect/workflow': 0.5.1(@effect/platform@0.88.1(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)
       effect: 3.16.16
 
-  '@effect/eslint-plugin@0.2.0':
+  '@effect/eslint-plugin@0.3.2':
     dependencies:
       '@dprint/formatter': 0.4.1
       '@dprint/typescript': 0.91.8
