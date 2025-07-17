@@ -37,13 +37,13 @@ importers:
         version: 7.27.1(@babel/core@7.28.0)
       '@effect/build-utils':
         specifier: ^0.8.8
-        version: 0.8.8
+        version: 0.8.9
       '@effect/eslint-plugin':
         specifier: ^0.3.2
         version: 0.3.2
       '@effect/language-service':
         specifier: latest
-        version: 0.27.0
+        version: 0.27.2
       '@effect/vitest':
         specifier: latest
         version: 0.24.1(effect@3.16.16)(vitest@3.2.4(@types/node@22.16.4))
@@ -202,8 +202,8 @@ packages:
   '@dprint/typescript@0.91.8':
     resolution: {integrity: sha512-tuKn4leCPItox1O4uunHcQF0QllDCvPWklnNQIh2PiWWVtRAGltJJnM4Cwj5AciplosD1Hiz7vAY3ew3crLb3A==}
 
-  '@effect/build-utils@0.8.8':
-    resolution: {integrity: sha512-OWyGEMsInZaA1seUIqa16qJX9zgo0f85Vll304hnxo4KhjWZTByzUartJ/GG7BZJ+m8eRj0xOkr9Kv9PBnV+ng==}
+  '@effect/build-utils@0.8.9':
+    resolution: {integrity: sha512-wzunjr8pyNjghLueo5ePQD7vaM3qeO2H/jF57hNYbQM/rxfipBWYKukoqWyp04qGZ+V86FyOHb8zD5+PMZvH2A==}
     engines: {node: '>=16.17.1'}
     hasBin: true
 
@@ -232,8 +232,8 @@ packages:
       lmdb:
         optional: true
 
-  '@effect/language-service@0.27.0':
-    resolution: {integrity: sha512-ILN6c7s1rb7JhR2+yHNtAP+nygkRdsrEWZZRGyEuskGzOJ4QCUjXQk+K3yn6TYoulnzFzOEwW/KvfuKrA3jmAQ==}
+  '@effect/language-service@0.27.2':
+    resolution: {integrity: sha512-AFgxoIZ6xpfwCZp7+1mj3f1HsK3Yqe9I0iUfpf8Iu2gl9F3dmdFiOvuoLRVSkfVsK2BTQr8kv2zPi53Lst2haw==}
     hasBin: true
 
   '@effect/platform-bun@0.74.0':
@@ -2912,7 +2912,7 @@ snapshots:
 
   '@dprint/typescript@0.91.8': {}
 
-  '@effect/build-utils@0.8.8':
+  '@effect/build-utils@0.8.9':
     dependencies:
       micromatch: 4.0.8
       pkg-entry-points: 1.1.1
@@ -2937,7 +2937,7 @@ snapshots:
       effect: 3.16.16
       uuid: 11.1.0
 
-  '@effect/language-service@0.27.0': {}
+  '@effect/language-service@0.27.2': {}
 
   '@effect/platform-bun@0.74.0(@effect/cluster@0.43.0(@effect/platform@0.88.1(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(@effect/sql@0.42.0(@effect/experimental@0.52.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(@effect/workflow@0.5.1(@effect/platform@0.88.1(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.1(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(@effect/sql@0.42.0(@effect/experimental@0.52.2(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.1(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)':
     dependencies:
