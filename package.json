@@ -27,6 +27,8 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
+    "@effect/platform": "^0.88.1",
+    "@effect/platform-bun": "^0.74.0",
     "effect": "latest"
   },
   "devDependencies": {
@@ -35,7 +37,7 @@
     "@babel/plugin-transform-export-namespace-from": "^7.24.7",
     "@babel/plugin-transform-modules-commonjs": "^7.24.8",
     "@effect/build-utils": "^0.8.8",
-    "@effect/eslint-plugin": "^0.3.2",
+    "@effect/eslint-plugin": "^0.2.0",
     "@effect/language-service": "latest",
     "@effect/vitest": "latest",
     "@eslint/compat": "1.1.1",
