@@ -5,6 +5,7 @@ export class OllamaService extends Effect.Service<OllamaService>()("OllamaServic
   dependencies: [OllamaConfigurationProvider.Default],
   effect: Effect.gen(function*() {
     const config = yield* OllamaConfigurationProvider
+
     return {
       cof: config
     }
