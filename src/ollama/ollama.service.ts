@@ -1,4 +1,7 @@
+import { AiLanguageModel } from "@effect/ai"
 import * as Effect from "effect/Effect"
+import * as Layer from "effect/Layer"
+import { OllamaAiLanguageModel } from "./ai-language-model.js"
 import { OllamaConfigurationProvider } from "./ollama.config.js"
 
 export class OllamaService extends Effect.Service<OllamaService>()("OllamaService", {
@@ -7,7 +10,14 @@ export class OllamaService extends Effect.Service<OllamaService>()("OllamaServic
     const config = yield* OllamaConfigurationProvider
 
     return {
-      cof: config
+      config
     }
   })
 }) {}
+
+export const OllamaAiLanguageModelLive = Layer.effect(
+  AiLanguageModel.AiLanguageModel,
+  OllamaAiLanguageModel
+).pipe(
+  Layer.provide(OllamaConfigurationProvider.Default)
+)

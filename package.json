@@ -30,7 +30,8 @@
     "@effect/ai": "^0.22.1",
     "@effect/platform": "^0.88.2",
     "@effect/platform-bun": "^0.74.0",
-    "effect": "latest"
+    "effect": "latest",
+    "ollama": "^0.5.16"
   },
   "devDependencies": {
     "@babel/cli": "^7.28.0",

@@ -2,12 +2,12 @@ import * as Config from "effect/Config"
 import * as Effect from "effect/Effect"
 import * as Schema from "effect/Schema"
 
-const OllamaConfig = Schema.Struct({
+const _OllamaConfig = Schema.Struct({
   url: Schema.String,
   model: Schema.String
 })
 
-type OllamaConfig = Schema.Schema.Type<typeof OllamaConfig>
+type OllamaConfigType = Schema.Schema.Type<typeof _OllamaConfig>
 
 export class OllamaConfigurationProvider
   extends Effect.Service<OllamaConfigurationProvider>()("OllamaConfigurationProvider", {
@@ -19,7 +19,7 @@ export class OllamaConfigurationProvider
         Config.withDefault("qwen3:32b")
       )
 
-      const config: OllamaConfig = {
+      const config: OllamaConfigType = {
         url,
         model
       }
