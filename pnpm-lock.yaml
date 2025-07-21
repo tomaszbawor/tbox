@@ -15,7 +15,7 @@ importers:
     dependencies:
       '@effect/ai':
         specifier: ^0.22.1
-        version: 0.22.1(@effect/experimental@0.52.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.2(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)
+        version: 0.22.2(@effect/experimental@0.52.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.2(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)
       '@effect/platform':
         specifier: ^0.88.2
         version: 0.88.2(effect@3.16.16)
@@ -205,13 +205,13 @@ packages:
   '@dprint/typescript@0.91.8':
     resolution: {integrity: sha512-tuKn4leCPItox1O4uunHcQF0QllDCvPWklnNQIh2PiWWVtRAGltJJnM4Cwj5AciplosD1Hiz7vAY3ew3crLb3A==}
 
-  '@effect/ai@0.22.1':
-    resolution: {integrity: sha512-FtnEErImA1+kHUjdhprgIRJiIw2sJtsaqIkt8ZrzVLGn0+9LPFGVqjnEriyYyytvp2B5nwQXRWNyX+vJ2nU9lw==}
+  '@effect/ai@0.22.2':
+    resolution: {integrity: sha512-oyS6s9ocZhqJFk6qwy6QMF2AFLXPDJUY2fBzfuaeBmppnjy8XVgU+v5vRPCT6VCue40Y0H7nrTzdYM7I6+lY1w==}
     peerDependencies:
-      '@effect/experimental': ^0.52.1
-      '@effect/platform': ^0.88.1
-      '@effect/rpc': ^0.65.1
-      effect: ^3.16.14
+      '@effect/experimental': ^0.52.2
+      '@effect/platform': ^0.88.2
+      '@effect/rpc': ^0.65.2
+      effect: ^3.16.16
 
   '@effect/build-utils@0.8.9':
     resolution: {integrity: sha512-wzunjr8pyNjghLueo5ePQD7vaM3qeO2H/jF57hNYbQM/rxfipBWYKukoqWyp04qGZ+V86FyOHb8zD5+PMZvH2A==}
@@ -2789,7 +2789,7 @@ snapshots:
 
   '@dprint/typescript@0.91.8': {}
 
-  '@effect/ai@0.22.1(@effect/experimental@0.52.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.2(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)':
+  '@effect/ai@0.22.2(@effect/experimental@0.52.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(@effect/platform@0.88.2(effect@3.16.16))(@effect/rpc@0.65.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16))(effect@3.16.16)':
     dependencies:
       '@effect/experimental': 0.52.2(@effect/platform@0.88.2(effect@3.16.16))(effect@3.16.16)
       '@effect/platform': 0.88.2(effect@3.16.16)
