@@ -4,10 +4,10 @@ import * as Effect from "effect/Effect"
 import * as Option from "effect/Option"
 import * as Stream from "effect/Stream"
 import { Ollama } from "ollama"
-import { OllamaConfigurationProvider } from "./ollama.config.js"
+import { OllamaConfig } from "./ollama.config.js"
 
 export const OllamaAiLanguageModel = Effect.gen(function*() {
-  const config = yield* OllamaConfigurationProvider
+  const config = yield* OllamaConfig
   const ollama = new Ollama({ host: config.url })
 
   const makeError = (method: string, error: unknown) =>
