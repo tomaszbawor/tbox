@@ -1,7 +1,6 @@
 import * as Effect from "effect/Effect"
 import * as Random from "effect/Random"
-import { OllamaAiLanguageModel } from "../ollama/ai-language-model.js"
-import { OllamaConfig } from "../ollama/ollama.config.js"
+import { OllamaAiLanguageModel, OllamaService } from "../ollama/index.js"
 
 // Example showing AI integration with simple tool-like functions
 
@@ -86,7 +85,7 @@ const program = Effect.gen(function*() {
   console.log("\n=== Using with AI Model ===")
 
   // Example of using the Ollama AI model
-  const _model = yield* OllamaAiLanguageModel
+  yield* OllamaAiLanguageModel
 
   // Note: The actual tool integration would depend on the @effect/ai API
   // This is a simplified example showing the concept
@@ -95,7 +94,7 @@ const program = Effect.gen(function*() {
 
 // Run the program
 const main = program.pipe(
-  Effect.provide(OllamaConfig.Default),
+  Effect.provide(OllamaService.Default),
   Effect.tapError((error) => Effect.log(`Error: ${error}`))
 )
 

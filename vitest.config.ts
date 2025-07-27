@@ -5,7 +5,7 @@ export default defineConfig({
   plugins: [],
   test: {
     setupFiles: [path.join(__dirname, "setupTests.ts")],
-    include: ["./test/**/*.test.ts"],
+    include: ["./test/**/*.test.ts", "./src/**/*.test.ts"],
     globals: true
   },
   resolve: {

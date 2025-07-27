@@ -1,7 +1,7 @@
 import { AiInput, AiLanguageModel } from "@effect/ai"
 import * as Effect from "effect/Effect"
 import * as Stream from "effect/Stream"
-import { OllamaAiLanguageModelLive } from "./ollama.service.js"
+import { OllamaAiLanguageModelLive } from "./index.js"
 
 // Example 1: Simple text generation
 const testGenerateText = AiLanguageModel.generateText({

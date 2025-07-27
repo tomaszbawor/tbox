@@ -4,7 +4,7 @@ import { BunRuntime } from "@effect/platform-bun"
 import * as Console from "effect/Console"
 import * as Effect from "effect/Effect"
 import * as Stream from "effect/Stream"
-import { OllamaAiLanguageModelLive, OllamaService } from "./ollama/ollama.service.js"
+import { OllamaAiLanguageModelLive, OllamaService } from "./ollama/index.js"
 
 const program = Effect.gen(function*() {
   yield* Effect.logInfo("Starting program ...")
