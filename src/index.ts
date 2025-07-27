@@ -2,7 +2,7 @@ import { HttpApiBuilder, HttpApiSwagger, HttpMiddleware, HttpServer } from "@eff
 import { BunHttpServer, BunRuntime } from "@effect/platform-bun"
 import { Layer } from "effect"
 import { Api } from "./api.js"
-import { HealthGroupLive } from "./health/health.api.js"
+import { HealthGroupLive } from "./health/health.controller.js"
 
 const ApiLive = HttpApiBuilder.api(Api).pipe(
   Layer.provide(HealthGroupLive) // Health Endpoints
