@@ -4,6 +4,7 @@ services:
       context: .
       dockerfile: Dockerfile
     image: tbox-microservice:latest
+    pull_policy: build
     container_name: tbox-app
     restart: unless-stopped
     environment:
