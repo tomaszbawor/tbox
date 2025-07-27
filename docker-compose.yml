@@ -9,6 +9,7 @@ services:
     restart: unless-stopped
     environment:
       NODE_ENV: production
+      PORT:  3030
       SERVICE_NAME: tbox-api
       SERVICE_VERSION: 1.0.0
       JAEGER_ENDPOINT: http://jaeger:4317
