@@ -3,6 +3,7 @@ import { BunHttpServer, BunRuntime } from "@effect/platform-bun"
 import { Layer } from "effect"
 import { Api } from "./api.js"
 import { HealthGroupLive } from "./health/health.controller.js"
+import { TelemetryLive } from "./telemetry.js"
 
 const ApiLive = HttpApiBuilder.api(Api).pipe(
   Layer.provide(HealthGroupLive) // Health Endpoints
@@ -17,7 +18,8 @@ const HttpLive = HttpApiBuilder.serve(HttpMiddleware.logger).pipe(
       console: true
     },
     port: 3030
-  }))
+  })),
+  Layer.provide(TelemetryLive) // OpenTelemetry layer
 )
 
 BunRuntime.runMain(Layer.launch(HttpLive))
