@@ -10,13 +10,13 @@ const ApiLive = HttpApiBuilder.api(Api).pipe(
 
 const HttpLive = HttpApiBuilder.serve(HttpMiddleware.logger).pipe(
   HttpServer.withLogAddress, // Logs on what port we are listening too
-  Layer.provide(HttpApiSwagger.layer()),
+  Layer.provide(HttpApiSwagger.layer()), // Swagger docs on {url}/docs endpoint
   Layer.provide(ApiLive),
   Layer.provide(BunHttpServer.layer({
     development: {
       console: true
     },
-    port: 3333
+    port: 3030
   }))
 )
 

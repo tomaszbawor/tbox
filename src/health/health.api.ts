@@ -7,4 +7,5 @@ export class HealthGroup extends HttpApiGroup.make("health.api")
     HttpApiEndpoint.get("get", "/")
       .addSuccess(Schema.String)
   )
+  .prefix("/health")
 {}
