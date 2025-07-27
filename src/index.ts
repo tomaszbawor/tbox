@@ -27,7 +27,7 @@ const HttpLive = HttpApiBuilder.serve(HttpMiddleware.logger).pipe(
   Layer.provide(HttpApiSwagger.layer()), // Swagger docs on {url}/docs endpoint
   Layer.provide(ApiLive),
   Layer.provide(ServerLive),
-  Layer.provide(TelemetryLive) // OpenTelemetry layer
+  Layer.provide(TelemetryLive.pipe(Layer.provide(AppConfigLive))) // OpenTelemetry layer
 )
 
 BunRuntime.runMain(Layer.launch(HttpLive))
