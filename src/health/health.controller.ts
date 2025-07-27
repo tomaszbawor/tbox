@@ -11,9 +11,5 @@ const getHealth = () =>
       "health.endpoint": "/api/health"
     }
   })(
-    Effect.gen(function*() {
-      yield* Effect.sleep("10 millis")
-      yield* Effect.logInfo("Health check performed")
-      return "OK"
-    })
+    Effect.succeed("OK")
   )
