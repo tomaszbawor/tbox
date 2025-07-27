@@ -2,7 +2,7 @@
   "name": "@template/basic",
   "version": "0.0.0",
   "type": "module",
-  "packageManager": "pnpm@9.10.0",
+  "packageManager": "bun@1.2.19",
   "license": "MIT",
   "description": "A basic Effect package",
   "repository": {
@@ -16,20 +16,19 @@
   "scripts": {
     "start": "tsx src/Program.ts",
     "codegen": "build-utils prepare-v2",
-    "build": "pnpm build-esm && pnpm build-annotate && pnpm build-cjs && build-utils pack-v2",
+    "build": "bun run build-esm && bun run build-annotate && bun run build-cjs && build-utils pack-v2",
     "build-esm": "tsc -b tsconfig.build.json",
     "build-cjs": "babel build/esm --plugins @babel/transform-export-namespace-from --plugins @babel/transform-modules-commonjs --out-dir build/cjs --source-maps",
     "build-annotate": "babel build/esm --plugins annotate-pure-calls --out-dir build/esm --source-maps",
     "check": "tsc -b tsconfig.json",
     "lint": "eslint \"**/{src,test,examples,scripts,dtslint}/**/*.{ts,mjs}\"",
-    "lint-fix": "pnpm lint --fix",
+    "lint-fix": "bun run lint --fix",
     "test": "vitest",
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@effect/ai": "^0.22.1",
-    "@effect/platform": "^0.88.2",
-    "@effect/platform-bun": "^0.74.0",
+    "@effect/platform": "latest",
+    "@effect/platform-bun": "latest",
     "effect": "latest"
   },
   "devDependencies": {
@@ -68,11 +67,6 @@
       "include": [
         "**/*.ts"
       ]
-    }
-  },
-  "pnpm": {
-    "patchedDependencies": {
-      "babel-plugin-annotate-pure-calls@0.4.0": "patches/babel-plugin-annotate-pure-calls@0.4.0.patch"
     }
   }
 }
