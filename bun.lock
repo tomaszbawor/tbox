@@ -30,7 +30,7 @@
         "@types/node": "^22.16.5",
         "@typescript-eslint/eslint-plugin": "^8.38.0",
         "@typescript-eslint/parser": "^8.38.0",
-        "babel-plugin-annotate-pure-calls": "^0.4.0",
+        "babel-plugin-annotate-pure-calls": "^0.5.0",
         "bun-types": "^1.2.19",
         "eslint": "^9.32.0",
         "eslint-import-resolver-typescript": "^3.10.1",
@@ -527,7 +527,7 @@
 
     "available-typed-arrays": ["available-typed-arrays@1.0.7", "", { "dependencies": { "possible-typed-array-names": "^1.0.0" } }, "sha512-wvUjBtSGN7+7SjNpq/9M2Tg350UZD3q62IFZLbRAR1bSMlCo1ZaeW+BJ+D090e4hIIZLBcTDWe4Mh4jvUDajzQ=="],
 
-    "babel-plugin-annotate-pure-calls": ["babel-plugin-annotate-pure-calls@0.4.0", "", { "peerDependencies": { "@babel/core": "^6.0.0-0 || 7.x" } }, "sha512-oi4M/PWUJOU9ZyRGoPTfPMqdyMp06jbJAomd3RcyYuzUtBOddv98BqLm96Lucpi2QFoQHkdGQt0ACvw7VzVEQA=="],
+    "babel-plugin-annotate-pure-calls": ["babel-plugin-annotate-pure-calls@0.5.0", "", { "peerDependencies": { "@babel/core": "^7.0.0" } }, "sha512-bWlaZl2qsJKHv9BJgF1g6bQ04wK/7Topq9g59I795W9jpx9lNs9N5LK5NjlEBCDhHncrO0vcoAMuHJR3oWnTeQ=="],
 
     "balanced-match": ["balanced-match@1.0.2", "", {}, "sha512-3oSeUO0TMV67hN1AmbXsK4yaqU7tjiHlbxRDZOpH0KW9+CeX4bRAaX0Anxt0tx2MrpRpWwQaPwIlISEJhYU5Pw=="],
 
