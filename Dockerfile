@@ -23,4 +23,4 @@ USER nodejs
 EXPOSE 3000
 
 # Start the application directly with Bun
-CMD ["bun", "run", "src/Program.ts"]
+CMD ["bun", "run", "src/index.ts"]
