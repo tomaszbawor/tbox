@@ -1,4 +1,4 @@
-import { HttpApi, HttpApiBuilder, HttpApiEndpoint, HttpApiGroup } from "@effect/platform"
+import { HttpApi, HttpApiBuilder, HttpApiEndpoint, HttpApiGroup, HttpServer } from "@effect/platform"
 import { BunHttpServer, BunRuntime } from "@effect/platform-bun"
 import { Effect, Layer, Schema } from "effect"
 
@@ -26,6 +26,7 @@ const ApiLive = HttpApiBuilder.api(Api).pipe(
 )
 
 const HttpLive = HttpApiBuilder.serve().pipe(
+  HttpServer.withLogAddress, // Logs on what port we are listening too
   Layer.provide(ApiLive),
   Layer.provide(BunHttpServer.layer({
     development: {
