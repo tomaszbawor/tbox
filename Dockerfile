@@ -1,5 +1,5 @@
 # Single stage build with Bun
-FROM oven/bun:1.2.19-alpine
+FROM oven/bun:1.4.3-alpine
 
 WORKDIR /app
 
