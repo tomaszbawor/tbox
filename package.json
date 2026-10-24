@@ -26,7 +26,7 @@
     "coverage": "vitest --coverage"
   },
   "dependencies": {
-    "@effect/opentelemetry": "^0.56.0",
+    "@effect/opentelemetry": "^0.64.0",
     "@effect/platform": "latest",
     "@effect/platform-bun": "latest",
     "@effect/schema": "^0.75.5",
